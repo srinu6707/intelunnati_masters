@@ -1,0 +1,63 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+module ATM_Controller
+(
+// {ALTERA_ARGS_BEGIN} DO NOT REMOVE THIS LINE!
+
+	balance_requested,
+	card_eject,
+	card_ejected,
+	card_inserted,
+	clk,
+	deposit_completed,
+	deposit_requested,
+	mini_statement,
+	new_balance,
+	old_balance,
+	pin_entered,
+	reset,
+	transaction,
+	transaction_processed,
+	transaction_selected,
+	withdrawal_completed,
+	withdrawal_requested
+// {ALTERA_ARGS_END} DO NOT REMOVE THIS LINE!
+
+);
+
+// {ALTERA_IO_BEGIN} DO NOT REMOVE THIS LINE!
+input			balance_requested;
+output			card_eject;
+input			card_ejected;
+input			card_inserted;
+input			clk;
+output			deposit_completed;
+input			deposit_requested;
+output	[15:0]	mini_statement;
+output	[15:0]	new_balance;
+output	[15:0]	old_balance;
+input			pin_entered;
+input			reset;
+output	[3:0]	transaction;
+input			transaction_processed;
+input			transaction_selected;
+output			withdrawal_completed;
+input			withdrawal_requested;
+
+// {ALTERA_IO_END} DO NOT REMOVE THIS LINE!
+// {ALTERA_MODULE_BEGIN} DO NOT REMOVE THIS LINE!
+// {ALTERA_MODULE_END} DO NOT REMOVE THIS LINE!
+endmodule
+
